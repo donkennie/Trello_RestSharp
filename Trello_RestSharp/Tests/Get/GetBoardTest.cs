@@ -3,16 +3,17 @@ using RestSharp;
 using System.Net;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework.Legacy;
-using Trello_RestSharp;
+using Trello_RestSharp.Tests;
+using Trello_RestSharp.Consts;
 
-namespace BoardTest
+namespace Trello_RestSharp.Tests.Get
 {
     public class GetBoardTest : BaseTest
-    {    
+    {
         [Test]
         public void CheckGetBoards()
         {
-            var request = RequestWithAuth("/1/members/{member}/boards")
+            var request = RequestWithAuth(CardsEndpoints.GetAllBoardsUrl)
                 .AddUrlSegment("member", "ajeigbekehindetimothy");
             var response = _client.Get(request);
             ClassicAssert.AreEqual(HttpStatusCode.OK, response.StatusCode);
@@ -21,7 +22,7 @@ namespace BoardTest
         [Test]
         public void CheckGetBoard()
         {
-            var request = RequestWithAuth("/1/boards/{id}")
+            var request = RequestWithAuth(CardsEndpoints.GetBoardUrl)
                 .AddUrlSegment("id", "5abbe4b7ddc1b351ef961414");
             var response = _client.Get(request);
             ClassicAssert.AreEqual(HttpStatusCode.OK, response.StatusCode);

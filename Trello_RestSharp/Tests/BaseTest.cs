@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using RestSharp;
 
-namespace Trello_RestSharp
+namespace Trello_RestSharp.Tests
 {
     public class BaseTest
     {

@@ -5,13 +5,13 @@ using Newtonsoft.Json.Schema;
 using NUnit.Framework;
 using NUnit.Framework.Legacy;
 using RestSharp;
-using Trello_RestSharp;
+using Trello_RestSharp.Tests;
 
-namespace _07GetMethodValidationHt
+namespace Trello_RestSharp.Tests.Get
 {
     public class GetCardsTest : BaseTest
     {
-     
+
         [Test]
         public void CheckGetCards()
         {

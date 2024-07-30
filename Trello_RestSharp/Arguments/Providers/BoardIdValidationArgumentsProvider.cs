@@ -15,7 +15,7 @@ namespace Trello_RestSharp.Arguments.Providers
                 {
                     ErrorMessage = "invalid id",
                     StatusCode = HttpStatusCode.BadRequest,
-                    PathParams = new[] {new Parameter("id", "invalid", ParameterType.UrlSegment)}
+                    PathParams = new[] { Parameter.CreateParameter("id", "invalid", ParameterType.UrlSegment)}
                 }
             };
             yield return new object[]
@@ -24,7 +24,7 @@ namespace Trello_RestSharp.Arguments.Providers
                 {
                     ErrorMessage = "The requested resource was not found.",
                     StatusCode = HttpStatusCode.NotFound,
-                    PathParams = new[] {new Parameter("id", "60d847d9aad2437cb984f8e1", ParameterType.UrlSegment)}
+                    PathParams = new[] { Parameter.CreateParameter("id", "60d847d9aad2437cb984f8e1", ParameterType.UrlSegment)}
                 }
             };
         }
