@@ -25,7 +25,7 @@ namespace Trello_RestSharp.Consts
         };
 
         public const string ExistingBoardId = "61fe437419cdd87656ce9fa6";
-
+        public const string BoardIdToUpdate = "60d84769c4ce7a09f9140220";
         public const string Username = "learnpostman";
     }
 }

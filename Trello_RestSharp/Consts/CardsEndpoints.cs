@@ -13,6 +13,8 @@ namespace Trello_RestSharp.Consts
 
         public const string CreateBoardUrl = "/1/boards";
 
+        public const string UpdateBoardUrl = "/1/boards/{id}";
+
         public const string DeleteBoardUrl = "/1/boards/{id}";
     }
 }
